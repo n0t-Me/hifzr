@@ -26,6 +26,12 @@ _A tiny CLI to download Quran recitations by surah & reciter and generate
 - Rust toolchain (`cargo`) – install via [https://rustup.rs](https://rustup.rs)
 - `ffmpeg`
 
+### Directly
+
+```bash
+cargo install hifzr
+```
+
 ### From source
 
 ```bash
