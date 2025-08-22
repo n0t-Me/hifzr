@@ -1,0 +1,21 @@
+[package]
+name = "hifzr"
+version = "0.1.0"
+edition = "2024"
+description = "Hifz-friendly Quran downloader & ayah playlist builder"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/n0t-Me/hifzr"
+categories = ["command-line-utilities"]
+
+[dependencies]
+anyhow = "1.0.99"
+clap = { version = "4.5.45", features = ["derive"] }
+futures-util = "0.3.31"
+indicatif = "0.18.0"
+owo-colors = "4.2.2"
+reqwest = { version = "0.12.23", features = ["json", "stream"] }
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.143"
+tokio = { version = "1.47.1", features = ["full"] }
+tracing = "0.1.41"
+unicode-normalization = "0.1.24"
