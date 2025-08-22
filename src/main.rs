@@ -32,7 +32,7 @@ enum Cmd {
     Download {
         #[arg(long)] reciter: String,
         #[arg(long)] chapter: String,
-        #[arg(long, default_value="~/Music/Quran_hifz")] out: String,
+        #[arg(long, default_value="~/Quran_hifz")] out: String,
         #[arg(long, default_value_t=false)] force: bool,
     },
     /// Build an ayah-only playlist (optionally auto-download first)
@@ -52,7 +52,7 @@ enum Cmd {
         /// Optional silence (ms) between repeats/ayahs (uses a tiny silent file)
         #[arg(long, default_value_t=0)] gap_ms: u32,
 
-        #[arg(long, default_value="~/Music/Quran_hifz")] out: String,
+        #[arg(long, default_value="~/Quran_hifz")] out: String,
     },
     /// List chapters or reciters
     Ls {
